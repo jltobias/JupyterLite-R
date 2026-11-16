@@ -1,0 +1,62 @@
+name: Build and deploy textbook and R Lab
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: pages-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: 'release'
+          use-public-rspm: true
+      - name: Linux libraries for R package installation
+        run: sudo apt-get update && sudo apt-get install -y libarchive-dev libcurl4-openssl-dev libssl-dev
+      - run: python -m pip install -r requirements.txt
+      - name: Install R Shiny export dependencies
+        run: Rscript tools/install_shiny.R
+      - name: Test Shiny model and reactivity
+        run: Rscript tools/test_shiny.R
+      - name: Validate notebook structure and source synchronization
+        run: python tools/check_content.py
+      - name: Execute R core lessons
+        run: python tools/validate_notebooks.py
+      - name: Build combined Pages artifact
+        run: python tools/build.py --base-url /${{ github.event.repository.name }}
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: r-validation
+          path: validation/runs/core
+  deploy:
+    if: github.event_name != 'pull_request'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy
+        id: deployment
+        uses: actions/deploy-pages@v4

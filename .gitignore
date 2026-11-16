@@ -1,0 +1,15 @@
+.venv/
+.cache/
+_build/
+_site/
+_lite/
+_stage/
+_shiny/
+validation/*.log
+.jupyterlite.doit.db*
+.ipynb_checkpoints/
+__pycache__/
+*.Rout
+Rplots.pdf
+validation/runs/
+tools/runtime_check.R

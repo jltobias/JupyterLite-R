@@ -1,0 +1,76 @@
+{
+  "runtime": "native R",
+  "mode": "extensions",
+  "notebooks": [
+    {
+      "notebook": "01-browser-laboratory.ipynb",
+      "exit_code": 0,
+      "code_sha256": "4358264fa5284bf692e2dc530f9be30e5e6ebca4a43094a54a1b7e11eec8faac",
+      "executed_cells": 3,
+      "skipped_optional_cells": 0
+    },
+    {
+      "notebook": "02-color-and-choropleths.ipynb",
+      "exit_code": 0,
+      "code_sha256": "82f86020f7261c0327356e81cb140531859ef5444881ae4a4717cd4832701def",
+      "executed_cells": 5,
+      "skipped_optional_cells": 0
+    },
+    {
+      "notebook": "03-vector-geometry.ipynb",
+      "exit_code": 0,
+      "code_sha256": "c78ccc2393cdba9a6a4a9abc8a7da944491c7ea507c790e7597fcbe6ac9cc2d8",
+      "executed_cells": 3,
+      "skipped_optional_cells": 0
+    },
+    {
+      "notebook": "04-terrain-and-rasters.ipynb",
+      "exit_code": 0,
+      "code_sha256": "2751cbe589ac233c901ed842bb996e7112205bdf0d79f831fbf12e6239bb1e06",
+      "executed_cells": 4,
+      "skipped_optional_cells": 0
+    },
+    {
+      "notebook": "05-three-dimensional-scenes.ipynb",
+      "exit_code": 0,
+      "code_sha256": "1c83ce268c494abb867059d16b8916f7fdc310b0415f740fb1e75a6859f33cca",
+      "executed_cells": 3,
+      "skipped_optional_cells": 0
+    },
+    {
+      "notebook": "06-globes-and-great-circles.ipynb",
+      "exit_code": 0,
+      "code_sha256": "936d7c826ad7537df174e1f618de93953a161eec35a8047e93843a35769b892f",
+      "executed_cells": 2,
+      "skipped_optional_cells": 0
+    },
+    {
+      "notebook": "07-spatial-dependence.ipynb",
+      "exit_code": 0,
+      "code_sha256": "a69edea8aeccd60e2119fda3da0ff3cf8f08aebe37ee17f5c36e46281943e4a1",
+      "executed_cells": 4,
+      "skipped_optional_cells": 0
+    },
+    {
+      "notebook": "08-linked-micromaps.ipynb",
+      "exit_code": 0,
+      "code_sha256": "76da0ffb2d9c0958207c1c058c4008151c0a9c449a8eb4f47efd61b8b39bc662",
+      "executed_cells": 3,
+      "skipped_optional_cells": 0
+    },
+    {
+      "notebook": "09-capstone.ipynb",
+      "exit_code": 0,
+      "code_sha256": "fb234213200a6277b5772911bc2a440de7b1f4c85de2b0d9a6eb2c1820a638c0",
+      "executed_cells": 5,
+      "skipped_optional_cells": 0
+    },
+    {
+      "notebook": "10-reactive-maps-with-shiny.ipynb",
+      "exit_code": 0,
+      "code_sha256": "a182bfee8e6bc838798947b1f18d229f03014d14ce9db1e50f79a437c93c5e85",
+      "executed_cells": 2,
+      "skipped_optional_cells": 0
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "chapters/01-browser-laboratory.R": "d11e55ad0c7e3c7aca43321b70ce62085ad98dbdc7640689580d0d8d1ff5d548",
+  "chapters/02-color-and-choropleths.R": "be5eb39c88c76d48ec36feddad8c754112d39ced3036a32a3479fa890e143393",
+  "chapters/03-vector-geometry.R": "4ceef99b770e2ed305f64e2fea2d527c1b67e99fa4b23e6a3c04ae0d07a21b5a",
+  "chapters/04-terrain-and-rasters.R": "8c27171d935901f68073ddb50a08f20a461875e2ed4481c26ea9e9a2c020a521",
+  "chapters/05-three-dimensional-scenes.R": "6e9f783c14ba7ce453cd20d87e3e351ba12a39464f063052212c18070a497259",
+  "chapters/06-globes-and-great-circles.R": "a3163f2c4cd98536edf89560caeb33a0698f52105ad3d4ba1fd0f04741285b16",
+  "chapters/07-spatial-dependence.R": "9f59c919ab08f73a699d0d671a87331916e32f24e16633ddaa711be0477ad345",
+  "chapters/08-linked-micromaps.R": "dbafef63b2ea7dd7acfaad0206d127bb99783d92e0c18680b026fde9a5797150",
+  "chapters/09-capstone.R": "40d2aafa2fc4d70b457a9cb14540ba163821a625568cad2c6f42e4deb1f7e69f",
+  "chapters/10-reactive-maps-with-shiny.R": "5cedb80cb5be794e6f18bc0ff1ecab35c3555cb42d4a1590cbe686e9e6b87251",
+  "shiny/app/app.R": "bc9a8d5e9b3649362cd5efc468c2564e695fca2d136166428940e56b647f3623",
+  "shiny/app/model.R": "2d9810ac257eb654dc86a3723c7929915d95e84734bd1537f118e2aa33eb5a57",
+  "notebooks/data/FictionalBG.rda": "228857264ce3d83871d76d477be0fbc8469541f52827b4aef431ebf5490f4cfa",
+  "notebooks/data/README.txt": "835220d1e53aec8b772c3835ded0061511abd7acdc532cd57b9af5b0a967ab9a",
+  "requirements.txt": "6ef263d1733b723147f81b328b914b93f4a85487f4c488fc1f092920600464f8",
+  "jupyter-lite.json": "4f8a24965d4f4ef0c49666e3bc2f75695b9b2b104a7a9c0ee21525e580d20add",
+  "myst.yml": "1cbfefb35620f75e43c7cc13be0f351cc61f98346f4158036b4cab6874c9687c",
+  "assets/splash.png": "1d1f814766cdc568d38aadaf1fa82f4ee4e650bbcc1daea176b4cc4bb225e02f"
+}

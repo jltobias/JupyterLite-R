@@ -1,0 +1,41 @@
+version: 1
+project:
+  id: jupyterlite-r-geospatial
+  title: Geospatial Science in Your Browser
+  subtitle: An R laboratory with JupyterLite
+  github: https://github.com/jltobias/JupyterLite-R
+  description: Original, reproducible lessons in maps, terrain, globes, spatial statistics, and linked micromaps.
+  bibliography:
+    - book/references.bib
+  toc:
+    - file: book/intro.md
+    - title: The laboratory
+      children:
+        - file: notebooks/01-browser-laboratory.ipynb
+        - file: notebooks/02-color-and-choropleths.ipynb
+        - file: notebooks/03-vector-geometry.ipynb
+    - title: From surfaces to spheres
+      children:
+        - file: notebooks/04-terrain-and-rasters.ipynb
+        - file: notebooks/05-three-dimensional-scenes.ipynb
+        - file: notebooks/06-globes-and-great-circles.ipynb
+    - title: Spatial evidence
+      children:
+        - file: notebooks/07-spatial-dependence.ipynb
+        - file: notebooks/08-linked-micromaps.ipynb
+        - file: notebooks/09-capstone.ipynb
+        - file: notebooks/10-reactive-maps-with-shiny.ipynb
+    - file: book/compatibility.md
+    - file: book/references.md
+site:
+  template: book-theme
+  title: JupyterLite-R
+  options:
+    folders: true
+  nav:
+    - title: R Lab
+      url: https://jltobias.github.io/JupyterLite-R/lite/lab/index.html
+    - title: Visual gallery
+      url: https://jltobias.github.io/JupyterLite-R/gallery/
+    - title: Shiny explorer
+      url: https://jltobias.github.io/JupyterLite-R/shiny/

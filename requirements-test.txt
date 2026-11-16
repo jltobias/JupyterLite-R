@@ -1,0 +1,3 @@
+# Optional browser validation tools, in addition to requirements.txt.
+# Tests use a locally installed Chrome browser through Playwright's channel='chrome'.
+playwright==1.65.2

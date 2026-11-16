@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Spatial observatory · JupyterLite-R</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="https://cdn.plot.ly/plotly-3.1.0.min.js" crossorigin="anonymous"></script>
+  <script defer src="gallery.js"></script>
+</head>
+<body>
+  <header><a class="brand" href="../">JupyterLite-R <span>/ spatial observatory</span></a>
+    <nav aria-label="Main"><a href="../book/">Read the book</a><a href="../lite/lab/index.html">Open R Lab ↗</a></nav></header>
+  <main>
+    <div class="intro"><p class="eyebrow">ONE LANGUAGE · MANY PERSPECTIVES</p>
+      <h1>See space differently.</h1>
+      <p>From a flat map to a rotating world. Explore original synthetic data generated in R,
+        then open a notebook to discover the mathematics behind the view.</p></div>
+    <div class="tabs" role="group" aria-label="Choose visualization">
+      <button data-view="map" aria-pressed="true">01 / 2D map</button>
+      <button data-view="terrain" aria-pressed="false">02 / 3D terrain</button>
+      <button data-view="scene" aria-pressed="false">03 / 3D scene</button>
+      <button data-view="globe" aria-pressed="false">04 / Globe</button>
+      <button data-view="evidence" aria-pressed="false">05 / Data view</button>
+    </div>
+    <section class="workspace" aria-labelledby="view-title">
+      <div id="plot" role="img" aria-label="Interactive spatial visualization. A description and downloadable data are provided alongside."></div>
+      <aside><p class="eyebrow" id="view-kind">THE CARTOGRAPHIC VIEW</p><h2 id="view-title">A field, made visible</h2>
+        <p id="description"></p><p class="hint" id="interaction"></p>
+        <label for="angle" id="angle-label">Camera azimuth <output id="angle-value">40°</output></label>
+        <input id="angle" type="range" min="0" max="360" value="40" step="5">
+        <a class="action" id="notebook" href="../lite/lab/index.html">Open the R notebook ↗</a>
+        <a id="data-link" href="data/terrain.csv" download>Download the source data (CSV)</a>
+        <p class="provenance">ORIGINAL SIMULATION<br>Not observed geography. No basemap or imagery.</p>
+      </aside>
+    </section>
+    <p id="status" role="status">Loading the plotting library and original R data…</p>
+    <details><summary>Data, accessibility, and reproducibility</summary>
+      <p>Plots use numerical CSV exports from the R chapters. Use the camera slider as a keyboard
+        alternative to dragging a 3D view. The full data and numerical summaries are available in
+        the notebooks and CSV links. WebGL and CDN access are needed for the interactive views;
+        the Book contains static figures. Changing a notebook does not change this saved gallery.</p>
+      <p>Regenerate with <code>Rscript tools/export_gallery.R</code>. The globe has no coastlines:
+        its surface and graticule are generated mathematical geometry. Local terrain coordinates
+        and elevations use metres; the sphere uses unit vectors. No data is sent to a plotting server.</p>
+    </details>
+  </main>
+  <footer>Original simulations by the JupyterLite-R project · Rendered with
+    <a href="https://github.com/plotly/plotly.js/blob/v3.1.0/LICENSE">Plotly.js 3.1.0 (MIT)</a> ·
+    <a href="https://github.com/jltobias/JupyterLite-R#citations-and-attributions">Citations & attribution</a></footer>
+</body>
+</html>

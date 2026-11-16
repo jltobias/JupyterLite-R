@@ -1,0 +1,16 @@
+cff-version: 1.2.0
+message: Please cite the project and the R packages used in your analysis.
+title: 'JupyterLite-R: Geospatial Science in Your Browser'
+type: software
+authors:
+  - name: JupyterLite-R contributors
+repository-code: https://github.com/jltobias/JupyterLite-R
+url: https://jltobias.github.io/JupyterLite-R/
+license: CC0-1.0
+abstract: Original synthetic geospatial teaching examples for R, webR, JupyterLite, and Jupyter Book.
+keywords:
+  - R
+  - JupyterLite
+  - webR
+  - geospatial
+  - education

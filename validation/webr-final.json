@@ -1,0 +1,106 @@
+{
+  "runtime": "R version 4.5.1 (2025-06-13)",
+  "webR": "0.5.1",
+  "browser": "157.0.8103.51",
+  "core": [
+    {
+      "notebook": "01-browser-laboratory.ipynb",
+      "cells": 3,
+      "status": "pass"
+    },
+    {
+      "notebook": "02-color-and-choropleths.ipynb",
+      "cells": 4,
+      "status": "pass"
+    },
+    {
+      "notebook": "03-vector-geometry.ipynb",
+      "cells": 2,
+      "status": "pass"
+    },
+    {
+      "notebook": "04-terrain-and-rasters.ipynb",
+      "cells": 3,
+      "status": "pass"
+    },
+    {
+      "notebook": "05-three-dimensional-scenes.ipynb",
+      "cells": 3,
+      "status": "pass"
+    },
+    {
+      "notebook": "06-globes-and-great-circles.ipynb",
+      "cells": 2,
+      "status": "pass"
+    },
+    {
+      "notebook": "07-spatial-dependence.ipynb",
+      "cells": 3,
+      "status": "pass"
+    },
+    {
+      "notebook": "08-linked-micromaps.ipynb",
+      "cells": 2,
+      "status": "pass"
+    },
+    {
+      "notebook": "09-capstone.ipynb",
+      "cells": 4,
+      "status": "pass"
+    },
+    {
+      "notebook": "10-reactive-maps-with-shiny.ipynb",
+      "cells": 2,
+      "status": "pass"
+    }
+  ],
+  "extensions": [
+    {
+      "package": "RColorBrewer",
+      "status": "installed and palette assertion passed"
+    },
+    {
+      "package": "sf",
+      "installed": true
+    },
+    {
+      "package": "spdep",
+      "installed": true
+    },
+    {
+      "package": "ggplot2",
+      "installed": true
+    },
+    {
+      "package": "micromapST",
+      "installed": true
+    }
+  ],
+  "optional_cells": [
+    {
+      "notebook": "02-color-and-choropleths.ipynb",
+      "status": "completed; package availability recorded separately"
+    },
+    {
+      "notebook": "03-vector-geometry.ipynb",
+      "status": "completed; package availability recorded separately"
+    },
+    {
+      "notebook": "04-terrain-and-rasters.ipynb",
+      "status": "completed; package availability recorded separately"
+    },
+    {
+      "notebook": "07-spatial-dependence.ipynb",
+      "status": "completed; package availability recorded separately"
+    },
+    {
+      "notebook": "08-linked-micromaps.ipynb",
+      "status": "completed; package availability recorded separately"
+    },
+    {
+      "notebook": "09-capstone.ipynb",
+      "status": "completed; package availability recorded separately"
+    }
+  ],
+  "session": "R version 4.5.1 (2025-06-13)\nPlatform: wasm32-unknown-emscripten (32-bit)\nRunning under: emscripten\n\nMatrix products: default\n  LAPACK version 3.12.1\n\nlocale:\n[1] en_US.UTF-8 C           en_US.UTF-8 en_US.UTF-8 en_US.UTF-8 C          \n\ntime zone: America/New_York\ntzcode source: internal\n\nattached base packages:\n[1] stats     graphics  grDevices utils     datasets  methods   base     \n\nloaded via a namespace (and not attached):\n [1] jsonlite_2.0.0     gtable_0.3.6       spData_2.3.4       spdep_1.4-2       \n [5] micromapST_3.1.1   Rcpp_1.1.1-1.1     webr_0.5.1         stringr_1.6.0     \n [9] rmapshaper_0.6.0   scales_1.4.0       boot_1.3-32        readxl_1.4.5      \n[13] lattice_0.22-9     ggplot2_4.0.3      deldir_2.0-4       R6_2.6.1          \n[17] labeling_0.4.3     curl_7.1.0         classInt_0.4-11    s2_1.1.7          \n[21] sf_1.1-0           units_1.0-1        DBI_1.3.0          RColorBrewer_1.1-3\n[25] rlang_1.2.0        sp_2.2-1           V8_8.2.0           stringi_1.8.7     \n[29] S7_0.2.2           viridisLite_0.4.3  cli_3.6.6          withr_3.0.2       \n[33] magrittr_2.0.5     class_7.3-23       wk_0.9.5           grid_4.5.1        \n[37] lifecycle_1.0.5    vctrs_0.6.5        writexl_1.5.4      KernSmooth_2.23-26\n[41] proxy_0.4-29       glue_1.8.1         farver_2.1.2       cellranger_1.1.0  \n[45] e1071_1.7-17       tools_4.5.1       "
+}

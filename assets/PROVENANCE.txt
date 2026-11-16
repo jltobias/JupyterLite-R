@@ -1,0 +1,10 @@
+Asset: splash.png
+Created: 2026-11-16 for JupyterLite-R.
+Method: OpenAI built-in image_gen tool, original generation, no input/reference image.
+Subject: fictional terrain, abstract map tiles, a wireframe sphere, and data points.
+No third-party artwork, logos, geographic data, or stock imagery was supplied.
+Purpose: editorial illustration, not an analytical map or scientifically accurate result.
+Rights: included in the project's CC0 dedication to the extent rights exist and can be waived.
+
+Generation prompt:
+Use case: scientific-educational. Asset type: wide GitHub README splash banner for an original geospatial R textbook called JupyterLite-R. Create an elegant original editorial 3D illustration on deep midnight navy: a floating stylized terrain tile with teal contours and amber mountain peaks, a small abstract choropleth tile, a luminous wireframe globe without real-world coastlines, and fine scatterplot points linked by subtle lines. Cohesive scientific visual language, restrained teal, turquoise and warm ochre, crisp clean geometry, sophisticated soft lighting. Wide landscape composition with generous quiet space at left. Exact text at left: "JupyterLite-R", then smaller "Geospatial science in your browser". No logos, no trademarks as symbols, no existing maps or datasets, no stock art, no artist imitation, no watermark. The terrain, polygons and globe are fictional illustrative geometry, not real geographic data. Produce polished readable typography.
