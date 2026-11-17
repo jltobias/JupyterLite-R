@@ -1,0 +1,27 @@
+{
+  "checked_on": "2026-11-17",
+  "base_url": "https://jltobias.github.io/JupyterLite-R/",
+  "deployed_commit": "d1ef765eb6e2da4f9df0379b474b4a7ca7289b63",
+  "workflow_url": "https://github.com/jltobias/JupyterLite-R/actions/runs/44159085025",
+  "http_200_routes": [
+    "",
+    "shiny/",
+    "shiny/app.json",
+    "lite/lab/index.html",
+    "gallery/",
+    "book/"
+  ],
+  "shiny": {
+    "initial": "17 of 100 sites selected (17%) · Mean index 43.38",
+    "changed_seed": "18 of 100 sites selected (18%) · Mean index 43.58",
+    "after_threshold": "0 of 100 sites selected (0%) · Mean index 43.38",
+    "csv_rows": 100,
+    "javascript_errors": [],
+    "browser": "157.0.8103.79"
+  },
+  "site": {
+    "javascript_errors": [],
+    "routes": "landing, Book home, chapters 1 and 10",
+    "mobile_gallery_width": 390
+  }
+}

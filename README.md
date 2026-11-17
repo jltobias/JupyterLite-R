@@ -16,11 +16,12 @@ collection is generated from original code. No installation of R is needed for r
 | --- | --- | --- |
 | [**Open the Jupyter Book →**](https://jltobias.github.io/JupyterLite-R/book/) | [**Launch R Lab ↗**](https://jltobias.github.io/JupyterLite-R/lite/lab/index.html?path=01-browser-laboratory.ipynb) | [**Open the visual gallery ↗**](https://jltobias.github.io/JupyterLite-R/gallery/) |
 
-**Publication status:** these are the configured GitHub Pages destinations. They become available
-after the included workflow is pushed and Pages is enabled with **GitHub Actions** as its source.
-This repository does not claim a successful public deployment. Until then, browse the notebooks
-below or build locally. The [upstream webR Lab demo](https://jupyter.r-wasm.org/) is an independent
-working example of the kernel; it does not contain this textbook's chapters.
+**Publication status:** published on GitHub Pages and checked on **2026-11-17**.
+The [deployment succeeded](https://github.com/jltobias/JupyterLite-R/actions/runs/44159085025),
+and the public Shiny app passed browser checks for its controls and CSV download.
+See the [validation record](validation/RESULTS.md) for tested behavior and remaining limits.
+The [upstream webR Lab demo](https://jupyter.r-wasm.org/) is an independent example of the kernel;
+it does not contain this textbook's chapters.
 
 ## A textbook you can experiment with
 

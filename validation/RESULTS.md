@@ -76,10 +76,25 @@ on DOI metadata services during the Book build. A stale MyST search-route build 
 cleaning generated Book output; the build tool now does this explicitly. One upstream Book theme
 schema warning (`multiple`, ignored) remains; it does not prevent rendering.
 
-These checks were completed locally before publication; consult GitHub Actions for deployment status.
-The README names the intended deployment URLs and gives activation instructions. Hosted URLs, Safari, Firefox,
-private-window storage behavior, full offline use, and large real-world datasets are unverified.
+The checks above were completed locally before publication; the hosted follow-up is recorded below.
+Safari, Firefox, private-window storage behavior, full offline use, and large real-world datasets
+are unverified.
 
 Reproduce with the commands in the README. Detailed local logs, individual cell sources, screenshots,
 and runtime session details are under `validation/runs/` (ignored by Git; core logs are also uploaded
 as CI artifacts). Native and browser results should not be interpreted as universal package support.
+
+## Hosted follow-up: 2026-11-17
+
+The first deployment failed because the Linux build lacked `libuv1-dev`, preventing the R package
+`fs` and its downstream Shiny dependencies from installing. Commit `d1ef765` adds those headers.
+The [replacement workflow](https://github.com/jltobias/JupyterLite-R/actions/runs/44159085025)
+passed Shiny tests, all ten core notebook checks, the combined build, and GitHub Pages deployment.
+
+The public [Shiny app](https://jltobias.github.io/JupyterLite-R/shiny/) passed the existing Chrome
+browser checks against its deployed URL: initial rendering, changed and restored seed, threshold,
+palette, and a CSV download containing 100 observations plus the header. No JavaScript errors were
+recorded. Public landing and Book routes, chapter images, and the gallery at 390 pixels also passed.
+The Lab entry URL returned HTTP 200; this follow-up did not rerun the hosted notebook kernel.
+See `published-browser.json` for the deployed commit, workflow, and browser results. Screenshots
+and the downloaded CSV are retained locally in `validation/runs/published/` (ignored by Git).
