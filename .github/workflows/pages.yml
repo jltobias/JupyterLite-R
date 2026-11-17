@@ -26,7 +26,7 @@ jobs:
           r-version: 'release'
           use-public-rspm: true
       - name: Linux libraries for R package installation
-        run: sudo apt-get update && sudo apt-get install -y libarchive-dev libcurl4-openssl-dev libssl-dev
+        run: sudo apt-get update && sudo apt-get install -y libarchive-dev libcurl4-openssl-dev libssl-dev libuv1-dev
       - run: python -m pip install -r requirements.txt
       - name: Install R Shiny export dependencies
         run: Rscript tools/install_shiny.R
